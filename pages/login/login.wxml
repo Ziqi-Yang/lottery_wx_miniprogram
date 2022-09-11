@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<template name="why_collect_nickname">
+    <view slot="tips" style="font-size: smaller;">
+        <navigator url="/pages/help/why_wx_nickname/index" style="color: rgb(70, 207, 70);" >
+        为什么要使用当前微信头像和昵称登录?
+        </navigator>
+    </view>
+</template>
+
+<view class="container">
+    <view class="userinfo">
+        <!-- 2022.10.26 前使用 getUserProfile -->
+        <view wx:if="{{canIUseGetUserProfile}}" >
+            <button bindtap="getUserProfile" class="getUserProfileButton"> 使用微信头像昵称登录</button>
+            <template is="why_collect_nickname"></template>
+        </view>
+        <!-- 使用2.21.2版本开始的 头像昵称填写能力 -->
+        <view wx:else>
+            <mp-form-page title="快速登录" subtitle="请使用微信提供的当前头像昵称快速登录\n匿名可以体验，但请不要参与实际摇人">
+            <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+                <image class="avatar" src="{{avatarUrl}}"></image>
+            </button>
+            <mp-form>
+                <mp-cells>
+                <mp-cell title="昵称">
+                    <input type="nickname" class="weui-input" placeholder="{{nickName}}" bindblur="collectNickName" />
+                </mp-cell>
+                </mp-cells>
+            </mp-form>
+            <template is="why_collect_nickname"></template>
+            <view slot="button">
+                <button class="weui-btn" type="primary" bindtap="login">确定</button>
+            </view>
+            </mp-form-page>
+        </view>
+  </view>
+</view>

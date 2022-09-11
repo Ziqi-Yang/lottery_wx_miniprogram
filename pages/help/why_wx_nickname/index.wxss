@@ -1,0 +1,19 @@
+.title {
+  font-size: 40rpx;
+  text-align: center;
+  margin: 30rpx 0;
+}
+
+.p {
+  font-size: 32rpx;
+  text-indent: 32rpx;
+}
+
+.pp {
+  font-size: 30rpx;
+  text-indent: 64rpx;
+}
+
+button {
+  margin: 20rpx 0;
+}

@@ -1,0 +1,65 @@
+/* pages/room/index/index.wxss */
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 32rpx;
+  margin-bottom: 64rpx;
+}
+
+.avatar {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.nickName {
+  color: #aaa;
+}
+
+#room {
+    color: grey;
+    font-size: 40rpx;
+}
+
+#resultArea  .avatar {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+#resultArea .nickName {
+    font-size: 40rpx;
+}
+
+#messageArea {
+    height: 150rpx;
+    width: 90%;
+    overflow: hidden;
+    border-style: solid none;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+
+#messageArea .li {
+    height: 50rpx;
+    font-size: 30rpx;
+}
+
+#userArea {
+    flex: 1;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#userArea .avatar {
+    /* 90vw 是父容器的宽度 */
+    /* 每行9个, 留有右边界和下边界 */
+    width: calc(90vw / 9 / 9 * 8);
+    height: calc(90vw / 9 / 9 * 8);
+    margin-right: calc(90vw / 9 / 9);
+    margin-bottom: calc(90vw / 9 / 9);
+}

@@ -1,0 +1,27 @@
+<!--pages/room/index/index.wxml-->
+<view class="container">
+    <!-- 右上角竖排菜单 -->
+    <view id="room">房间号：{{roomId}}</view>
+    <!-- 结果展示区域 -->
+    <view id="resultArea">
+        <view class="user">
+            <block wx:if="{{isRoomOwner}}">
+                <image class="avatar" src="{{avatarUrl}}" mode="cover" bindtap="randChooseUser"></image>
+                <text class="nickName" >{{nickName}}</text>
+            </block>
+            <block wx:else>
+                <image class="avatar" src="{{avatarUrl}}" mode="cover"></image>
+                <text class="nickName">{{nickName}}</text>
+            </block>
+        </view>
+    </view>
+    <!-- 消息显示区域，比如哪个人进入了房间 -->
+    <view id="messageArea">
+        <view class="li" wx:for="{{messages}}">{{item}}</view>
+    </view>
+    <!-- 展示部分用户 -->
+    <view id="userArea">
+        <view class="avatar"></view>
+        <image wx:for="{{users}}" class="avatar" src="{{item.avatarUrl}}" mode="cover"></image>
+    </view>
+</view>

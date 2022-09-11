@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userArea">
+    <image class="avatar" src="{{avatarUrl}}" mode="cover"></image>
+    <text class="nickName">{{nickName}}</text>
+  </view>
+  <view class="operations">
+    <button class="op weui-btn weui-btn_primary" bindtap="createRoom">创建房间</button>
+    <button class="op weui-btn weui-btn_primary" bindtap="enterRoom">加入已有房间</button>
+  </view>
+</view>

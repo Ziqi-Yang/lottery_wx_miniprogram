@@ -1,0 +1,34 @@
+/**index.wxss**/
+.userArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 64rpx 0;
+}
+
+.avatar {
+  overflow: hidden;
+  width: 168rpx;
+  height: 168rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.nickName {
+  color: #aaa;
+}
+
+.operations {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.op {
+  margin-bottom: 10rpx;
+}

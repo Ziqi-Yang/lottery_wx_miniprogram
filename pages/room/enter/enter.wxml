@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="mainArea">
+        <input type="text" class="weui-input"  maxlength="6" placeholder="请输入房间号" bindinput="getRoomId" auto-focus />
+        <button class="weui-btn"type="primary" bindtap="enterRoom" >进入</button>
+    </view>
+</view>
+
+<mp-dialog title="出错了" show="{{dialogShow}}" buttons="{{buttons}}" bindbuttontap="tapDialogButton">
+    <view>
+        {{dialogText}}
+    </view>
+</mp-dialog>

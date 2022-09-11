@@ -1,0 +1,14 @@
+/* pages/room/enter/enter.wxss */
+.mainArea {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+}
+
+input {
+    margin-bottom: 32rpx;
+    font-size: 50rpx !important;
+    border-bottom: 1px dashed black !important;
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+<view class="weui-article">
+  <view class="title">关于使用当前微信头像和昵称的声明</view>
+  <view class="p">1. “摇号小助手”小程序使用的微信头像和昵称只在用户使用本小程序时被收集，在服务端并不存储任何用户的任何相关信息</view>
+  <view class="p">2. 本小程序使用用户的微信头像和昵称有以下原因:</view>
+  <view class="pp">1. 摇人结果的展示需要用户的头像和昵称</view>
+  <button class="weui-btn weui-btn_primary" bindtap="navback">返回</button>
+</view>

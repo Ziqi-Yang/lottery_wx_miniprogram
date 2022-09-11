@@ -1,0 +1,21 @@
+.getUserProfileButton {
+    margin-top: 300rpx;
+    margin-bottom: 40rpx;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  margin-bottom: 40rpx;
+  width: 200rpx !important;
+  border-radius: 20rpx;
+}
+
+button.avatar-wrapper {
+  margin-top: -40rpx;
+}
+
+.avatar {
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+}

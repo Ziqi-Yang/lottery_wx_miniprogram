@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/help/why_wx_nickname/index", 
+    "pages/room/enter/enter",
+    "pages/room/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  } 
+}
