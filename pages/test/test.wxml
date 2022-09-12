@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+<view class='share'>
+    <mp-icon type="outline" icon="add-friends" color="black" size="{{20}}"></mp-icon>
+    <text>邀请</text>
+    <button open-type='share'></button>
+</view>

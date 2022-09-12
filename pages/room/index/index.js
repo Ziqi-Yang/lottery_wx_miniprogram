@@ -33,8 +33,9 @@ Page({
         socketOpen = false;
         wsbasePath = app.globalData.wsBaseUrl + "room/wsChannel?openId="
 
+        // url参数必须含有下面的两个，所以这里就不判断是否存在了，若没有就直接报错
         this.setData({
-            roomId: option.roomId, // url?roomId=xxxxxx&isRoomOwner=false&nickName
+            roomId: option.roomId, // url?roomId=xxxxxx&isRoomOwner=false
             isRoomOwner: option.isRoomOwner == "true" ? true : false
         })
         // console.log(that.data.isRoomOwner)
@@ -216,4 +217,11 @@ Page({
             })
         }
     },
+    onShareAppMessage() {
+        return {
+            title: `${getApp().globalData.nickName}邀请你进入房间摇人`,
+            desc: "参与摇人",
+            path: `/pages/login/login?roomId=${this.data.roomId}`
+        }
+    }
 })

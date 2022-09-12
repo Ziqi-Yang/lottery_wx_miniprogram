@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/help/why_wx_nickname/index", 
     "pages/room/enter/enter",
-    "pages/room/index/index"
+    "pages/room/index/index",
+    "pages/test/test"
   ],
   "window":{
     "backgroundTextStyle":"light",

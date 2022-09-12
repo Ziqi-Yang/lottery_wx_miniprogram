@@ -35,3 +35,9 @@
         </view>
   </view>
 </view>
+
+<mp-dialog title="出错了" show="{{dialogShow}}" buttons="{{buttons}}" bindbuttontap="tapDialogButton">
+    <view>
+        {{dialogText}}
+    </view>
+</mp-dialog>
